@@ -100,7 +100,7 @@ export const projects = [
       'A voice-first AI web assistant with Gemini that enables visually impaired users to navigate the web hands-free. Supports page summarization, Q&A, and actions like clicking buttons, filling and submitting forms entirely by voice.',
     stack: ['Gemini', 'WebSpeechAPI', 'Django'],
     hackathon: { label: '🏆 HackNCState 2025', award: 'Best Use of Generative AI' },
-    link: 'https://devpost.com/software/YOUR_SIGHTBUDDY_SLUG',
+    link: 'https://devpost.com/software/sight-buddy',
   },
   {
     title: 'UNewz',
@@ -109,7 +109,7 @@ export const projects = [
       'Real-time credibility overlay for YouTube that detects clickbait, extracts claims, and links sources — backed by Redis cloud cache. Designed a ReAct agent to fact-check and provide alternative sources in parallel within 50 sec for ~5 claims.',
     stack: ['LangChain', 'Redis', 'DuckDuckGo', 'Vultr Cloud', 'Twelve Labs'],
     hackathon: { label: '🏆 HackNCState 2026', award: 'Best Use of Tech' },
-    link: 'https://devpost.com/software/YOUR_UNEWZ_SLUG',
+    link: 'https://devpost.com/software/truthdetector-yznrlx',
   },
 ]
 
