@@ -29,8 +29,6 @@ export default function Hero() {
             className="w-full h-full object-cover"
           />
         </div>
-        {/* Online indicator */}
-        <span className="absolute bottom-1 right-1 w-4 h-4 bg-emerald-400 border-2 border-white rounded-full" />
       </div>
 
       {/* Location badge */}
