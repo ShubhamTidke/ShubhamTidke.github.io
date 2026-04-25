@@ -20,15 +20,31 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-14 bg-chrome-50"
     >
-      <div className="mb-8 inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 text-blue-500 text-sm font-medium">
+      {/* Avatar */}
+      <div className="mb-6 relative">
+        <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-lg ring-2 ring-blue-100">
+          <img
+            src="/avatar.jpg"
+            alt="Shubham Tidke"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Online indicator */}
+        <span className="absolute bottom-1 right-1 w-4 h-4 bg-emerald-400 border-2 border-white rounded-full" />
+      </div>
+
+      {/* Location badge */}
+      <div className="mb-6 inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 text-blue-500 text-sm font-medium">
         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
         {personal.location} · Open to opportunities
       </div>
 
+      {/* Heading */}
       <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-ink-900 mb-4 leading-tight tracking-tight">
         Hi, I&apos;m <span className="text-blue-500">Shubham</span>
       </h1>
 
+      {/* Animated role */}
       <div className="h-10 mb-6 flex items-center justify-center">
         <p className="text-xl sm:text-2xl text-ink-500 font-mono">
           {displayed}
@@ -36,10 +52,12 @@ export default function Hero() {
         </p>
       </div>
 
+      {/* Tagline */}
       <p className="max-w-xl text-ink-500 text-base sm:text-lg leading-relaxed mb-10">
         {personal.tagline}
       </p>
 
+      {/* CTA buttons */}
       <div className="flex flex-col sm:flex-row gap-3 items-center">
         <button
           onClick={() => scrollTo('#projects')}
@@ -56,6 +74,7 @@ export default function Hero() {
         </a>
       </div>
 
+      {/* Scroll indicator */}
       <button
         onClick={() => scrollTo('#experience')}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-chrome-400 hover:text-blue-400 transition-colors animate-bounce hidden sm:block"
